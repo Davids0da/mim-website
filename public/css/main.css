@@ -1,4 +1,7 @@
-/*Colors: */
+/*Colors:
+light-blue:#00AEEF
+dark-bleu:#003F75
+ */
 
 
 
@@ -8,4 +11,46 @@
   src: url('../fonts/SourceSansPro-Light.otf.woff') format('woff');
 }
 
+.navbar {
+    font-family: 'SourceSansPro';
+    height: 60px;
+}
 
+#logo-navbar {
+    margin-top: 7px;
+}
+
+.navbar-items {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+a {
+    color:#00AEEF;
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+a:hover {
+    color: #003F75;
+}
+
+#phone-number {
+    margin-top:30px;
+    font-size: 17px;
+    color: #003F75;
+}
+
+.eng-srb {
+    margin-top: 30px;
+}
+
+#welcome-page {
+    background: url('../images/welcome-page-background.jpg') no-repeat;
+    height: 800px;
+}
+
+#logo-header {
+    margin-top: 100px;
+    margin-left: 80px;
+}
