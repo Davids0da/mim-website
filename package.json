@@ -1,0 +1,26 @@
+{
+  "name": "Provins",
+  "version": "1.0.0",
+  "description": "Provins Skateshop | Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Davids0da/Provins-skateboards-.git"
+  },
+  "author": "David Milosavljevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davids0da/Provins-skateboards-.git"
+  },
+  "homepage": "https://github.com/Davids0da/Provins-skateboards-.git",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "express": "4.15.2",
+    "jquery": "3.1.1"
+  },
+  "devDependencies": {}
+}
