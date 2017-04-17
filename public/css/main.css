@@ -224,6 +224,9 @@ a:hover {
     
 }
 
+/*background-size: 100% 100%; - staviti da bude za velike monitore
+i dodati text-center na mapu da bude lepo pozicionirana */
+
 .service-text-1{
     margin-top:145px;
     color: #FA8A8A;
@@ -285,3 +288,52 @@ a:hover {
     height: 800px;
     background-position: 80% 80%;
 }
+#contact {
+    background: url('../images/contact-background.png') no-repeat;
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:60px;    
+}
+
+#map {
+    height: 550px;
+    margin-top: 120px;
+}
+
+.contact-form {
+    margin-top: 210px; 
+}
+
+.form-control {
+    background: transparent;
+    color: white;
+    font-family: 'SourceSansPro';
+    border-color:white;
+}
+
+button {
+    background: transparent;
+    color: white;
+    font-family: 'SourceSansPro';
+    
+}
+button:hover {
+    color: #00AEEF;
+}
+
+label {
+    color: white;
+     font-family: 'SourceSansPro';
+}
+
+ .vertical-line{
+      width: 1px; /* Line width */
+      background-color: white; /* Line color */
+      height: 100%; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
