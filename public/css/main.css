@@ -68,7 +68,7 @@ a:hover {
 
 #welcome-text-1 {
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 900;
 }
 #welcome-text-2 {
     font-size: 35px;
@@ -82,6 +82,11 @@ a:hover {
 
 #about {
     background: url('../images/about-background.png') no-repeat center;
+    height: 600px;
+    font-family: 'Courier New';
+}
+#about-eng {
+    background: url('../images/about-background-eng.png') no-repeat center;
     height: 600px;
     font-family: 'Courier New';
 }
@@ -195,7 +200,7 @@ a:hover {
     color: #003F75;
     font-size: 3.5rem;
     font-weight: 500;
-    font-family: 'Courier New';
+    font-family: 'SourceSansPro';
     margin-top: 80px;
 }
 
@@ -224,38 +229,57 @@ a:hover {
     
 }
 
-/*background-size: 100% 100%; - staviti da bude za velike monitore
-i dodati text-center na mapu da bude lepo pozicionirana */
+#service-eng {
+    background: url('../images/services-eng.png') no-repeat;
+    height: 800px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    background-position: 50% 50%;
+    
+}
+
+
 
 .service-text-1{
     margin-top:145px;
     color: #FA8A8A;
-    font-family: 'Courier New';
+    font-family: 'SourceSansPro';
     font-size: 1.7rem;
+    font-weight: 900;
+    font-variant: small-caps;
 }
 .service-text-2{
     margin-top:45px;
     color: #FA8A8A;
-    font-family: 'Courier New';
+    font-family: 'SourceSansPro';
     font-size: 1.7rem;
+    font-weight: 900;
+        font-variant: small-caps;
 }
 .service-text-3{
     margin-top:197px;
     color: #FA8A8A;
-    font-family: 'Courier New';
+    font-family: 'SourceSansPro';
     font-size: 1.7rem;
+        font-variant: small-caps;
+        font-weight: 900;
+        
 }
 .service-text-4{
     margin-top:158px;
     color: #FA8A8A;
-    font-family: 'Courier New';
+    font-family: 'SourceSansPro';
     font-size: 1.7rem;
+    font-weight: 900;
+        font-variant: small-caps;
 }
 .service-text-5{
     margin-top:45px;
     color: #FA8A8A;
-    font-family: 'Courier New';
+   font-family: 'SourceSansPro';
     font-size: 1.7rem;
+    font-weight: 900;
+        font-variant: small-caps;
 }
 
 
@@ -283,8 +307,20 @@ i dodati text-center na mapu da bude lepo pozicionirana */
     margin-top: 10px;
 
 }
+#gallery-eng {
+    background: url('../images/gallery-background-eng.png') no-repeat;
+    height: 800px;
+    background-position: 20% 20%;
+    margin-top: 10px;
+
+}
 #location {
     background: url('../images/location-background.png') no-repeat;
+    height: 800px;
+    background-position: 80% 80%;
+}
+#location-eng {
+    background: url('../images/location-background-eng.png') no-repeat;
     height: 800px;
     background-position: 80% 80%;
 }
@@ -329,11 +365,93 @@ label {
      font-family: 'SourceSansPro';
 }
 
- .vertical-line{
-      width: 1px; /* Line width */
+ div.vertical-line{
+      width: 0.3px; /* Line width */
       background-color: white; /* Line color */
       height: 100%; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
     }
+
+@media screen and (min-width: 1440px) {
+    #service {
+        background-size: 100% 100%;
+    }
+    .world-map-class {
+        text-align: center;
+    }
+}
+
+#button:hover {
+    color: #00AEEF;
+}
+
+#logo-footer {
+    margin-top: 250px;
+    margin-left: 130px;
+    width: 40%;
+}
+
+.footer-text {
+   font-family: 'SourceSansPro';
+    color: white;
+    font-size: 2rem;
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 990px) {
+   .contact-form {
+       margin-top: 20px;
+   }
+   #logo-footer { 
+       margin-left: 0px;
+       margin-top: 0px;
+       width: 20%;
+   }
+   .footer-text {
+       margin-left: 0px;
+   }
+}
+
+.contact-background {
+   background: url('../images/contact-background.png') no-repeat;
+   height: 800px;
+}
+.thank-you-box:hover {
+    width: 350px;   
+}
+.thank-box {
+    margin-top: 300px;
+    color: white;
+    font-weight: 200;
+}
+.thank-you-box { 
+    margin-top: 45px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 20px;
+    font-weight: 200;
+      -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    width: 400px;
+    float: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 990px) {
+    .contact-background {
+   background: deepskyblue;
+}
+}
+
+#gallery-box {
+    height: 550px;
+    margin-top: 120px;
+    padding: 0;
+}
+    
