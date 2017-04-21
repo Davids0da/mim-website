@@ -222,7 +222,7 @@ a:hover {
 
 #service {
     background: url('../images/services.png') no-repeat;
-    height: 800px;
+    height: 810px;
     margin-top: 80px;
     margin-bottom: 70px;
     background-position: 50% 50%;
@@ -231,7 +231,7 @@ a:hover {
 
 #service-eng {
     background: url('../images/services-eng.png') no-repeat;
-    height: 800px;
+    height: 810px;
     margin-top: 80px;
     margin-bottom: 70px;
     background-position: 50% 50%;
@@ -284,7 +284,7 @@ a:hover {
 
 
 #service-gear {
-    margin-top: 143px;
+    margin-top: 150px;
     margin-right: 35px;
      -webkit-animation: spinAboutItsCentreGear 3s linear infinite; 
 }
