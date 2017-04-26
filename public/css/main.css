@@ -316,7 +316,7 @@ a:hover {
     margin-top: 10px;
 
 }
-#location {
+#locations {
     background: url('../images/location-background.png') no-repeat;
     height: 800px;
     background-position: 80% 80%;
@@ -452,14 +452,23 @@ label {
 }
 
 #gallery-box {
+    position: absolute;
+    right: 0px;
     height: 550px;
-    margin-top: 180px;
+    margin-top: 130px;
     padding: 0;
     
-   
-   
+}
+.carousel img {
+
+  min-height: 550px;
+  height: 500px;
 }
 
+
+#carousel-exa {
+    background-size: cover;
+}
 
 .animate-in {
     -webkit-animation: fadeIn .5s ease-in;
@@ -486,4 +495,9 @@ label {
 .logo-navbar.spin {
     -webkit-animation: spinAboutItsCentre 3s linear infinite; 
 }
+
+
+
+
+
 
