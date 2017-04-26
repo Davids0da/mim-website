@@ -496,8 +496,6 @@ label {
     -webkit-animation: spinAboutItsCentre 3s linear infinite; 
 }
 
-
-
-
-
-
+.item {
+    height: 550px;
+}
