@@ -102,9 +102,24 @@ function initMap() {
     position: myLatLng,
     map: map,
     title: 'MIM',
-    icon: image
-
+    icon: image,
   });
+   var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<div id="bodyContent">'+
+            '<b>Prvomajska 18,</b> ' +
+             '<b>32300 Gornji Milanovac,</b> ' +
+              '<b>Srbija</b> ' +
+            '</div>'+
+            '</div>';
+
+var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+ marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
 };
 
 var $window = $(window);
@@ -135,4 +150,6 @@ function setLogoMarginTop(pageYOffset) {
     var procenat = 2.07;
     logo.style.marginTop =  maxSize - ((pageYOffset - minSize)/procenat) + 'px'; 
 };
+
+
 
