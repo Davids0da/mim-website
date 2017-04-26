@@ -110,3 +110,61 @@ function initMap() {
 window.addEventListener("beforeunload", function () {
   document.body.classList.add("animate-out");
 });
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+  if (window_top_position >= 41) {
+      document.getElementById("logo-navbar").classList.remove("hide-nav");
+    
+  }
+  else if (window_top_position <= 41) {
+      document.getElementById("logo-navbar").classList.add("hide-nav");
+  };
+};
+
+var $window = $(window);
+ $window.on('scroll resize', check_if_in_view);
+
+ function calculateAspectRatioFit(marginTop, marginBottom, scrollofTop, ScrollofBottom) {
+
+    
+    var ratio = Math.min(ScrollofTop / marginTop, marginBottom / ScrollofBottom);
+
+    return { marginstart: marginTop*ratio, marginend: marginBottom*ratio };
+
+ };
+
+
+
+
+
+var container = document.getElementById('navbar');
+var logo = document.getElementById('logo-navbar');
+
+window.addEventListener('scroll', function() {
+    var pageYOoffset =  $window.scrollTop();
+    
+  if (pageYOffset >= 40 && pageYOffset <= 150) {
+      setLogoMarginTop(pageYOffset);
+  } else if (pageYOffset < 40) {
+      setLogoMarginTop(40);
+  } else if (pageYOffset > 150) {
+      setLogoMarginTop(150);
+  }
+  
+  if (pageYOffset > 150){
+    $(logo).addClass('spin');
+  } else {
+    $(logo).removeClass('spin');
+  }
+});
+
+function setLogoMarginTop(pageYOffset) {
+    var maxSize = 60;
+    var minSize = 40;
+    var procenat = 2.07;
+    logo.style.marginTop =  maxSize - ((pageYOffset - minSize)/procenat) + 'px'; 
+}
+
