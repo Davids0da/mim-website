@@ -105,41 +105,9 @@ function initMap() {
     icon: image
 
   });
-}
-
-window.addEventListener("beforeunload", function () {
-  document.body.classList.add("animate-out");
-});
-
-function check_if_in_view() {
-  var window_height = $window.height();
-  var window_top_position = $window.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
-  if (window_top_position >= 41) {
-      document.getElementById("logo-navbar").classList.remove("hide-nav");
-    
-  }
-  else if (window_top_position <= 41) {
-      document.getElementById("logo-navbar").classList.add("hide-nav");
-  };
 };
 
 var $window = $(window);
- $window.on('scroll resize', check_if_in_view);
-
- function calculateAspectRatioFit(marginTop, marginBottom, scrollofTop, ScrollofBottom) {
-
-    
-    var ratio = Math.min(ScrollofTop / marginTop, marginBottom / ScrollofBottom);
-
-    return { marginstart: marginTop*ratio, marginend: marginBottom*ratio };
-
- };
-
-
-
-
-
 var container = document.getElementById('navbar');
 var logo = document.getElementById('logo-navbar');
 
@@ -166,4 +134,5 @@ function setLogoMarginTop(pageYOffset) {
     var minSize = 40;
     var procenat = 2.07;
     logo.style.marginTop =  maxSize - ((pageYOffset - minSize)/procenat) + 'px'; 
-}
+};
+
