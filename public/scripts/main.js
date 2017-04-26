@@ -97,7 +97,7 @@ function initMap() {
     }
 ]
   });
-  var image = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=0288D1&scale=2.0';
+  var image = 'http://vasilisa.com.ua/wp-content/uploads/2016/11/mapmarker-4-100x100.png';
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
