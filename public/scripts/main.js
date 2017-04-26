@@ -167,4 +167,3 @@ function setLogoMarginTop(pageYOffset) {
     var procenat = 2.07;
     logo.style.marginTop =  maxSize - ((pageYOffset - minSize)/procenat) + 'px'; 
 }
-
