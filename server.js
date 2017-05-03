@@ -59,7 +59,7 @@ app.post('/contact', function (req, res) {
         }
   });
     mailOpts = {
-    to: 'sodakolor@gmail.com',
+    to: 'markovic.mim@gmail.com',
     subject: 'MiM Website Customers',
     text: `${req.body.name}\n\n <${req.body.email}>\n\n${req.body.text}`
   };
