@@ -68,7 +68,7 @@ app.post('/contact', function (req, res) {
 res.sendFile(path.join(__dirname + '/views/contact.html'));
 });
 
-var port = process.env.PORT || 5000
+var port = process.env.PORT || 4000
 app.listen(port, function () {
   console.log('Listening on port ' + port + '!')
 });
